@@ -123,6 +123,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412011253498_init.cs" />
+    <Compile Include="Migrations\202412011253498_init.Designer.cs">
+      <DependentUpon>202412011253498_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\MyContext.cs" />
     <Compile Include="Models\EmailReq.cs" />
     <Compile Include="Models\Request.cs" />
@@ -255,6 +260,11 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202412011253498_init.resx">
+      <DependentUpon>202412011253498_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -25,6 +25,12 @@ namespace CoomingSoonApp.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(string UserName , string Password)
+        {
+            return View();
+        }
         public ActionResult Signout()
         {
             return RedirectToAction("Index", "Home");

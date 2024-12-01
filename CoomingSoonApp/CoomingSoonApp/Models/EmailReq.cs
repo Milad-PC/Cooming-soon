@@ -10,6 +10,7 @@ namespace CoomingSoonApp.Models
     {
         [Key]
         public int EmailReqId { get; set; }
+        [Required]
         public DateTime ReqDate { get; set; } = DateTime.Now;
         public string EmailAddress { get; set; } = "UnKnown";
     }

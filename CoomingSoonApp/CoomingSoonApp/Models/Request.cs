@@ -13,6 +13,7 @@ namespace CoomingSoonApp.Models
         public DateTime RequestDate { get; set; } = DateTime.Now;
         public string Name { get; set; } = "UnKnown";
         public string Message { get; set; } = "UnKnown";
+        [Required]
         public string Email { get; set; } = "UnKnown";
     }
 }
