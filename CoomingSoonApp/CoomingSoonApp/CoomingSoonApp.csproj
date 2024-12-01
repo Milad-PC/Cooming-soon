@@ -129,6 +129,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\MyContext.cs" />
+    <Compile Include="Models\Admins.cs" />
     <Compile Include="Models\EmailReq.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

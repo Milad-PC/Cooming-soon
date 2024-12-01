@@ -15,9 +15,12 @@
         protected override void Seed(CoomingSoonApp.MyContext context)
         {
             //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            Admins usr = new Admins();
+            usr.AdminsId = 1;
+            usr.UserName = "admin";
+            usr.Password = "admin";
+            context.Admins.AddOrUpdate(usr);
+            context.SaveChanges();
         }
     }
 }

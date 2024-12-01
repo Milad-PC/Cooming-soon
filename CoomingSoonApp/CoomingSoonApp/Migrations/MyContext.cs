@@ -11,5 +11,6 @@ namespace CoomingSoonApp
     {
         public DbSet<Request> Requests { get; set; }
         public DbSet<EmailReq> EmailRequests { get; set; }
+        public DbSet<Admins> Admins { get; set; }
     }
 }
