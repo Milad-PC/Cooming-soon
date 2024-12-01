@@ -127,6 +127,10 @@
     <Compile Include="Migrations\202412011253498_init.Designer.cs">
       <DependentUpon>202412011253498_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412011302403_adminadd.cs" />
+    <Compile Include="Migrations\202412011302403_adminadd.Designer.cs">
+      <DependentUpon>202412011302403_adminadd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\MyContext.cs" />
     <Compile Include="Models\Admins.cs" />
@@ -265,6 +269,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202412011253498_init.resx">
       <DependentUpon>202412011253498_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412011302403_adminadd.resx">
+      <DependentUpon>202412011302403_adminadd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
