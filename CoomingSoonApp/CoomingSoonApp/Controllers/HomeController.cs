@@ -16,5 +16,9 @@ namespace CoomingSoonApp.Controllers
         {
             return View();
         }
+        public ActionResult Timer()
+        {
+            return PartialView();
+        }
     }
 }
