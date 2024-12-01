@@ -20,11 +20,7 @@ $('a.s-scroll').on('click',function() {
 });
 
 // Page Loader : hide loader when all are loaded
-$(window).load(function(){
-    $('#page-loader').addClass('hidden');
-});
-
-
+$(window).on('load', function () { $('#page-loader').addClass('hidden'); });
 /* 1. Clock attribute */
 
 var dateReadableText = 'Upcoming date';
