@@ -111,10 +111,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmailReq.cs" />
+    <Compile Include="Models\Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +125,7 @@
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
     <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-icons.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap-reboot.rtl.css" />
@@ -134,6 +138,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\dashboard.css" />
     <Content Include="Content\foundation.min.css" />
     <Content Include="Content\ionicons.min.css" />
     <Content Include="Content\jquery.fullPage.css" />
@@ -141,6 +146,7 @@
     <Content Include="Content\main_responsive.css" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\pageloader.css" />
+    <Content Include="Content\sign-in.css" />
     <Content Include="Content\style-color1.css" />
     <Content Include="Content\stylesheet.css" />
     <Content Include="Content\stylesheet_1.css" />
@@ -148,7 +154,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\02.png" />
+    <Content Include="img\bg-default.jpg" />
     <Content Include="img\favicon.png" />
+    <Content Include="img\ionicons.svg" />
+    <Content Include="img\logo_large.png" />
+    <Content Include="img\logo_only.png" />
+    <Content Include="img\OpenSans-Bold-webfont.svg" />
+    <Content Include="img\opensans-light-webfont.svg" />
+    <Content Include="img\opensans-regular-webfont.svg" />
     <Content Include="Scripts\all.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -172,7 +186,10 @@
     <Content Include="fonts\opensans-regular-webfont.eot" />
     <Content Include="fonts\opensans-regular-webfont.ttf" />
     <Content Include="fonts\opensans-regular-webfont.woff" />
+    <Content Include="fonts\bootstrap-icons.woff" />
+    <Content Include="fonts\bootstrap-icons.woff2" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\color-modes.js" />
     <Content Include="Scripts\form_script.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -197,10 +214,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Thanks.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

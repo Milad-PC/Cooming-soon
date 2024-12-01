@@ -9,15 +9,11 @@
     <title>Light Company - Landing page Coming Soon template</title>
     <meta name="description" content="A responsive coming soon template, un template HTML pour une page en cours de construction">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-    <!-- Initializer -->
     <link rel="stylesheet" href="~/Content/normalize.css">
-    <!-- Web fonts and Web Icons -->
     <link rel="stylesheet" href="~/Content/pageloader.css">
     <link rel="stylesheet" href="~/Content/stylesheet_1.css">
     <link rel="stylesheet" href="~/Content/stylesheet.css">
     <link rel="stylesheet" href="~/Content/ionicons.min.css">
-
     <!-- Vendor CSS style -->
     <link rel="stylesheet" href="~/Content/foundation.min.css">
     <link rel="stylesheet" href="~/Content/jquery.fullPage.css">
@@ -30,28 +26,14 @@
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body id="menu" class="alt-bg">
-    <!--[if lt IE 8]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <!-- Page Loader -->
     <div class="page-loader" id="page-loader">
         <div><i class="ion ion-loading-d"></i><p>loading</p></div>
     </div>
-
     <!-- BEGIN OF site header Menu -->
-    <!-- Add "material" class for a material design style -->
     <header class="header-top">
-
         <div class="menu clearfix">
             <a href="#about-us">about</a>
-
-            <!--<div class="menu-cont">
-                <p class="text">Menu cont</p>
-                <ul class="sub-menu">
-                    <li><a href="htp://page">My Page</a></li>
-                </ul>
-            </div>-->
-            <!-- Add other menu similar to "about" here -->
             <a href="#contact">contact</a>
         </div>
     </header>
@@ -82,46 +64,25 @@
                 </a>
                 <span class="title">About Us</span>
             </li>
-            <!--<li data-menuanchor="contact">
+            <li data-menuanchor="contact">
                 <a href="#contact"><i class="icon ion ion-android-call"></i>
                 </a>
                 <span class="title">Contact</span>
-            </li>-->
-            <li data-menuanchor="contact">
+            </li>
+            @*<li data-menuanchor="contact">
                 <a href="#contact">
                     <i class="icon ion ion-email"></i>
                 </a>
                 <span class="title">Contact</span>
-            </li>
+            </li>*@
         </ul>
     </nav>
     <!-- END OF Quick nav icons at left -->
     <!-- BEGIN OF site cover -->
     <div class="page-cover" id="s-cover">
         <!-- Cover Background -->
-        <div class="cover-bg pos-abs full-size bg-img" data-image-src="img/bg-default.jpg"></div>
-
-        <!-- BEGIN OF Slideshow Background -->
-        <!--<div class="cover-bg pos-abs full-size slide-show">
-            <i class='img' data-src='./img/bg-slide1.jpg'></i>
-            <i class='img' data-src='./img/bg-slide2.jpg'></i>
-            <i class='img' data-src='./img/bg-slide3.jpg'></i>
-            <i class='img' data-src='./img/bg-slide4.jpg'></i>
-        </div>-->
-        <!-- END OF Slideshow Background -->
-        <!--BEGIN OF Static video bg  - uncomment below to use Video as Background-->
-        <!--<div id="container" class="video-container show-for-medium-up">
-            <video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted"
-                   width="640" height="360">
-                <source src="vid/flower_loop.mp4" type="video/mp4">
-            </video>
-        </div>-->
-        <!--END OF Static video bg-->
-        <!-- Solid color as background -->
-        <!--            <div class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgb(59, 59, 59)"></div>-->
-        <!-- Solid color as filter -->
+        <div class="cover-bg pos-abs full-size bg-img" data-image-src="/img/bg-default.jpg"></div>
         <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(0, 0, 0, 0.41)"></div>
-
     </div>
     <!--END OF site Cover -->
     <!-- Begin of timer pane -->
@@ -129,28 +90,17 @@
         <div class="content">
             <!-- Clock -->
             <div class="clock clock-countdown">
-                <div class="site-config" data-date="02/02/2025 00:00:00" data-date-timezone="+0"></div>
+                <div class="site-config" data-date="12/21/2024 00:00:00" data-date-timezone="+0"></div>
                 <div class="elem-center">
                     <div class="digit">
                         <span class="days">00</span>
                         <span class="txt">days</span>
                     </div>
                 </div>
-                <!-- Logo instead -->
-                <!--
-                                    <div class="logo">
-                                        <a href="#">
-                                            <img src="img/logo_only.png">
-                                        </a>
-                                    </div>
-                -->
-
                 <div class="elem-bottom">
                     <div class="deco"></div>
-
-                    <!--						<span class="days">12</span><span class="thin">D</span>-->
                     <span class="hours">00</span><span class="thin">H</span>
-                    <span class="minutes">00</span><span class="thin">MN</span>
+                    <span class="minutes">00</span><span class="thin">M</span>
                     <span class="seconds">36</span><span class="thin">S</span>
                 </div>
             </div>
@@ -167,20 +117,15 @@
 
         <!-- Begin of home page -->
         <div class="section page-home page page-cent" id="s-home">
-
-            <!-- Logo -->
-            <!--<div class="logo-container">
-                <img class="h-logo" src="img/logo_only.png" alt="Logo">
-            </div>-->
             <!-- Content -->
             <section class="content">
 
                 <header class="header">
                     <div class="h-left">
-                        <h2>New <strong>Company</strong></h2>
+                        <h2><strong>Light</strong>Company</h2>
                     </div>
                     <div class="h-right">
-                        <h3>Lorem <br>product</h3>
+                        <h3>Web<br>Design</h3>
                         <h4 class="subhead"><a href="#register">Available here soon</a></h4>
                     </div>
                 </header>
@@ -206,7 +151,7 @@
                     <h4 class="subhead">Register to get our latest news</h4>
                 </header>
                 <div>
-                    <form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
+                    <form id="mail-subscription" class="form magic send_email_form" method="POST" action="ajaxserver/serverfile.php">
                         <p class="invite">Please, write your email below to stay in touch with us :</p>
                         <div class="fields clearfix">
                             <div class="input">
@@ -214,11 +159,9 @@
                                 <input id="reg-email" class="email_f" name="email" type="email" required="" placeholder="your@email.address" data-validation-type="email">
                             </div>
                             <div class="buttons">
-                                <button id="submit-email" class="button email_b" name="submit_email">Ok</button>
+                                <button id="submit-email" class="button email_b" name="submit_email" type="submit">Ok</button>
                             </div>
                         </div>
-
-                        <p class="email-ok invisible"><strong>Thank you</strong> for your subscription. We will inform you.</p>
                     </form>
                 </div>
             </section>
@@ -404,7 +347,7 @@
     <footer class="page-footer">
         <div>
             <a href="http://www.instagram.com/lightcompany.ir" target="_blank"><i class="ion icon ion-social-instagram"></i></a>
-            <a href="http://twitter.com/miradontsoa" target="_blank"><i class="ion icon ion-social-github"></i></a>
+            <a href="https://github.com/Milad-PC/Cooming-soon" target="_blank"><i class="ion icon ion-social-github"></i></a>
         </div>
     </footer>
     <script src="~/Scripts/jquery-3.7.1.min.js"></script>

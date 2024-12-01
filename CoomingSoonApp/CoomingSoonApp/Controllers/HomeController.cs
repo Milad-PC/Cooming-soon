@@ -12,5 +12,9 @@ namespace CoomingSoonApp.Controllers
         {
             return View();
         }
+        public ActionResult Thanks()
+        {
+            return View();
+        }
     }
 }
