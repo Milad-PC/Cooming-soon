@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<CoomingSoonApp.EmailReq>
 @{
     Layout = null;
 }
@@ -71,26 +71,23 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Count</th>
+                                <th scope="col">Date Request</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Copy</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Emails</td>
-                                <td>@ViewBag.Email</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Request</td>
-                                <td>@ViewBag.Request</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Total</td>
-                                <td>@((int)(ViewBag.Email + ViewBag.Request))</td>
-                            </tr>
+                            @foreach (EmailReq item in Model)
+                            {
+                                <tr>
+                                    <td>@item.EmailReqId</td>
+                                    <td>@item.ReqDate</td>
+                                    <td>@item.EmailAddress</td>
+                                    <td>
+                                        <button class="btn btn-primary" type="button" onclick="">Copy</button>
+                                    </td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace CoomingSoonApp.Models
+namespace CoomingSoonApp
 {
     public class EmailReq
     {
