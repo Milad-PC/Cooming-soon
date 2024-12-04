@@ -1,5 +1,4 @@
-﻿using CoomingSoonApp.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,11 +21,11 @@ namespace CoomingSoonApp.Controllers
         }
         public ActionResult Emails()
         {
-            return View(_db.EmailRequests);
+            return View(_db.EmailRequests.OrderByDescending(o => o.ReqDate));
         }
         public ActionResult Requests()
         {
-            return View(_db.Requests);
+            return View(_db.Requests.OrderByDescending(o => o.RequestDate));
         }
         [AllowAnonymous]
         public ActionResult Login()
@@ -36,11 +35,11 @@ namespace CoomingSoonApp.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [AllowAnonymous]
-        public ActionResult Login([Bind(Include = "UserName,Password")]Admins src)
+        public ActionResult Login([Bind(Include = "UserName,Password")] Admins src)
         {
-            if(_db.Admins.Any(u=>u.UserName == src.UserName && u.Password == src.Password))
+            if (_db.Admins.Any(u => u.UserName == src.UserName && u.Password == src.Password))
             {
-                FormsAuthentication.SetAuthCookie(src.UserName,true);
+                FormsAuthentication.SetAuthCookie(src.UserName, true);
                 return RedirectToAction("Index");
             }
             ViewBag.Error = "User Not Found";
