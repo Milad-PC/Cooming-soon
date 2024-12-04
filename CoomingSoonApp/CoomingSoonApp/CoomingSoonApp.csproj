@@ -208,7 +208,6 @@
     <Content Include="fonts\bootstrap-icons.woff2" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\color-modes.js" />
-    <Content Include="Scripts\form_script.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.js" />

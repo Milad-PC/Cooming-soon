@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoomingSoonApp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -17,3 +18,4 @@ namespace CoomingSoonApp
         public string Email { get; set; } = "UnKnown";
     }
 }
+/*RequestId,RequestDate,Name,Message,Email*/

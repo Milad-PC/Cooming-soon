@@ -151,7 +151,8 @@
                     <h4 class="subhead">Register to get our latest news</h4>
                 </header>
                 <div>
-                    <form id="mail-subscription" class="form magic send_email_form" method="POST" action="ajaxserver/serverfile.php">
+                    <form class="form magic send_email_form" method="POST" action="@Url.Action("EmailReq","Home")">
+                        @Html.AntiForgeryToken()
                         <p class="invite">Please, write your email below to stay in touch with us :</p>
                         <div class="fields clearfix">
                             <div class="input">
@@ -159,7 +160,7 @@
                                 <input id="reg-email" class="email_f" name="email" type="email" required="" placeholder="your@email.address" data-validation-type="email">
                             </div>
                             <div class="buttons">
-                                <button id="submit-email" class="button email_b" name="submit_email" type="submit">Ok</button>
+                                <button class="button" type="submit">Ok</button>
                             </div>
                         </div>
                     </form>
@@ -304,26 +305,26 @@
                     <div class="page-block c-right v-zoomIn">
                         <div class="wrapper">
                             <div>
-                                <form class="message form send_message_form" method="get" action="ajaxserver/serverfile.php">
+                                <form class="message form send_message_form" method="POST" action="@Url.Action("TextReq","Home")">
+                                    @Html.AntiForgeryToken()
                                     <div class="fields clearfix">
                                         <div class="input">
                                             <label for="mes-name">Name </label>
-                                            <input id="mes-name" name="name" type="text" placeholder="Your Name" required="">
+                                            <input id="mes-name" name="Name" type="text" placeholder="Your Name" required="">
                                         </div>
                                         <div class="buttons">
-                                            <button id="submit-message" class="button email_b" name="submit_message">Ok</button>
+                                            <button type="submit" id="submit-message" class="button email_b" name="submit_message">Ok</button>
                                         </div>
                                     </div>
                                     <div class="fields clearfix">
                                         <div class="input">
                                             <label for="mes-email">Email </label>
-                                            <input id="mes-email" type="email" placeholder="Email Address" name="email" required="">
+                                            <input id="mes-email" type="email" placeholder="Email Address" name="Email" required>
                                         </div>
                                     </div>
                                     <div class="fields clearfix no-border">
                                         <label for="mes-text">Message </label>
-                                        <textarea id="mes-text" placeholder="Message ..." name="message" required=""></textarea>
-
+                                        <textarea id="mes-text" placeholder="Message ..." name="Message" required=""></textarea>
                                         <div>
                                             <p class="message-ok invisible">Your message has been sent, thank you.</p>
                                         </div>
