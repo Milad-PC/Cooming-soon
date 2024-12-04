@@ -12,6 +12,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Text</th>
+                    <th scope="col">Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,6 +23,13 @@
                         <td>@item.Name</td>
                         <td>@item.Email</td>
                         <td>@item.Message</td>
+                        <td>
+                            <form action="@Url.Action("DelReq","Admin")" method="POST">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@item.RequestId" />
+                                <button class="btn btn-outline-danger" type="submit">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                 }
             </tbody>

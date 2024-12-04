@@ -27,6 +27,15 @@ namespace CoomingSoonApp.Controllers
         {
             return View(_db.Requests.OrderByDescending(o => o.RequestDate));
         }
+        [HttpPost]
+        public ActionResult DelReq(int id)
+        {
+            Request src = _db.Requests.Find(id);
+            _db.Entry(src).State = System.Data.Entity.EntityState.Deleted;
+            _db.SaveChanges();
+
+            return RedirectToAction("Requests");
+        }
         [AllowAnonymous]
         public ActionResult Login()
         {
